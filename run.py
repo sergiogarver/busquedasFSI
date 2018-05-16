@@ -14,15 +14,15 @@ ld = search.GPSProblem('L', 'D', search.romania)
 #print search.depth_limited_search(ab).path()
 print "Camino  de B a A"
 print search.ramificacion_y_salto(ab).path()
-print search.ramificacion_y_salto_con_acot(ab).path(), "\n"
+print search.ramificacion_y_salto_con_subes(ab).path(), "\n"
 
 print "Camino  de A a E"
 print search.ramificacion_y_salto(ea).path()
-print search.ramificacion_y_salto_con_acot(ea).path(), "\n"
+print search.ramificacion_y_salto_con_subes(ea).path(), "\n"
 
 print "Camino  de D a L"
 print search.ramificacion_y_salto(ld).path()
-print search.ramificacion_y_salto_con_acot(ld).path(), "\n"
+print search.ramificacion_y_salto_con_subes(ld).path(), "\n"
 
 
 # Result:

@@ -149,7 +149,7 @@ def graph_my_search(problem, fringe, tipo):
             if tipo==0:
                 print "Numero de nodos expandidos con ramificacion y salto: ", counter
             else:
-                print "Numero de nodos expandidos con ramificacion y salto con acotacion: ", counter
+                print "Numero de nodos expandidos con ramificacion y salto con subestimacion: ", counter
             return node
         if node.state not in closed:
             counter = counter+1
@@ -232,7 +232,7 @@ def ramificacion_y_salto(problem, h=None):
 
     pass
 
-def ramificacion_y_salto_con_acot(problem, h =None):
+def ramificacion_y_salto_con_subes(problem, h =None):
 
     return graph_my_search(problem, MyQueue2(problem), 1)
 
